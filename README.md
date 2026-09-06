@@ -17,7 +17,7 @@ Visual Slash includes six dynamic builders:
 
 The available options change according to the selected category. A user can also describe the desired result in ordinary language and get a local rule-based starting combination.
 
-## v0.7.0 — multilingual
+## v0.7.1 — multilingual
 
 Supported languages:
 
@@ -66,4 +66,8 @@ Alessandro Pezzali
 
 ## Version
 
-v0.7.0
+v0.7.1
+
+## v0.7.1 language switching fix
+
+Language selection now saves the chosen locale and performs a clean reload so the entire interface, builder and generated prompt initialize consistently in the selected language. This also avoids mixed-language state left by an older service worker or page instance.
