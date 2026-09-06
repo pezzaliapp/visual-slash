@@ -39,7 +39,7 @@ function tip(d){return `<div class="tip"><strong>${d[1]}</strong><p>${d[2]}</p><
 function renderBuilder(){builder.innerHTML=''; C[active].groups.forEach(g=>{let s=document.createElement('section');s.className='group';s.innerHTML=`<div class="group-title"><h2>${g[0]}</h2><span>${g[1]}</span></div><div class="chips"></div>`;let ch=s.querySelector('.chips');g[2].forEach(d=>{let w=document.createElement('div');w.className='chip-wrap';w.innerHTML=`<button class="chip ${selected.has(d[0])?'active':''}">${d[0]}</button>${tip(d)}`;let b=w.querySelector('button');b.onclick=()=>{selected.has(d[0])?selected.delete(d[0]):selected.add(d[0]);renderBuilder();renderOutput()};b.onfocus=()=>w.classList.add('show-tip');b.onblur=()=>w.classList.remove('show-tip');ch.append(w)});builder.append(s)});}
 function renderModes(){let grid=$('#modeGrid');grid.innerHTML='';Object.entries(C).forEach(([id,m])=>{let b=document.createElement('button');b.className='recipe '+(id===active?'mode-active':'');b.innerHTML=`<span>${m.icon}</span><strong>${m.title}</strong><small>${m.desc}</small>`;b.onclick=()=>switchMode(id);grid.append(b)});let m=C[active];$('#modeInfo').innerHTML=`<h3>${m.icon} ${m.title}</h3><p>${m.desc} <strong>Le scelte qui sotto cambiano in base a questa categoria.</strong></p>`;renderRecipes()}
 function renderRecipes(){let g=$('#recipeGrid');g.innerHTML='';recipes[active].forEach(r=>{let b=document.createElement('button');b.className='recipe';b.innerHTML=`<span>${r[0]}</span><strong>${r[1]}</strong><small>Compila automaticamente una combinazione di partenza.</small>`;b.onclick=()=>apply(r[2]);g.append(b)})}
-function switchMode(id){active=id;selected.clear();subject.placeholder={image:'Es. Mostra una cella temporalesca e la posizione prevista tra 40 minuti.',document:'Es. Prepara un report sul mercato italiano, modificabile in Word.',data:'Es. Confronta vendite 2025 e 2026 e crea un Excel con grafici.',presentation:'Es. Prepara 8 slide per presentare il progetto alla direzione.',text:'Es. Scrivi una email professionale al cliente per...',code:'Es. Crea una PWA offline con service worker che...'}[id];renderModes();renderBuilder();renderOutput();builder.scrollIntoView({behavior:'smooth',block:'start'})}
+function switchMode(id){active=id;selected.clear();subject.placeholder={image:'Es. Mostra una cella temporalesca e la posizione prevista tra 40 minuti.',document:'Es. Prepara un report sul mercato italiano, modificabile in Word.',data:'Es. Confronta vendite 2025 e 2026 e crea un Excel con grafici.',presentation:'Es. Prepara 8 slide per presentare il progetto alla direzione.',text:'Es. Scrivi una email professionale al cliente per...',code:'Es. Crea una PWA offline con service worker che...'}[id];renderModes();renderBuilder();renderOutput();requestAnimationFrame(()=>$('#modeInfo').scrollIntoView({behavior:'smooth',block:'start'}))}
 function apply(tags){selected=new Set(tags);renderBuilder();renderOutput();builder.scrollIntoView({behavior:'smooth',block:'start'})}
 function renderOutput(){let tags=[...selected], subj=subject.value.trim();$('#slashLine').textContent=tags.length?tags.join(' '):'Scegli una o più voci';let inst=tags.map(t=>item(t)?.[4]).filter(Boolean);let pre=`Obiettivo: ${subj||'[descrivi qui cosa vuoi ottenere]'}.\n\n`;let mode=`Tipo di risultato: ${C[active].title}. `;$('#promptText').textContent=pre+mode+(inst.length?inst.join(' '):'Scegli le opzioni sopra per definire il risultato.')+' Prima di finalizzare, verifica che il risultato rispetti l’obiettivo e non inventare informazioni mancanti.';$('#whyBox').innerHTML='<h3>Perché queste scelte?</h3>'+(tags.length?tags.map(t=>{let d=item(t);return `<p><b>${t}</b> ${d?d[2]:''}</p>`}).join(''):`<p>Hai scelto <b>${C[active].title}</b>. Ora scegli tipo, stile/contenuto e formato di consegna.</p>`)}
 subject.addEventListener('input',renderOutput);
@@ -48,5 +48,21 @@ $('#helpChoose').onclick=()=>{let t=subject.value.trim();if(!t){subject.focus();
 async function copy(t){try{await navigator.clipboard.writeText(t)}catch{}}
 $('#copySlash').onclick=()=>copy($('#slashLine').textContent);$('#copyPrompt').onclick=()=>copy($('#promptText').textContent);$('#reset').onclick=()=>{active='image';selected.clear();subject.value='';renderModes();renderBuilder();renderOutput()};$('#share').onclick=async()=>{let text=$('#slashLine').textContent+'\n\n'+$('#promptText').textContent;if(navigator.share)await navigator.share({title:'Visual Slash',text});else copy(text)};
 let deferred;window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferred=e;$('#install').hidden=false});$('#install').onclick=async()=>{if(deferred){deferred.prompt();await deferred.userChoice;deferred=null;$('#install').hidden=true}};
-if('serviceWorker'in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js'));
+const APP_VERSION='0.6.1';
+if('serviceWorker' in navigator){
+  window.addEventListener('load',async()=>{
+    try{
+      const reg=await navigator.serviceWorker.register('./sw.js?v='+APP_VERSION,{updateViaCache:'none'});
+      await reg.update();
+      let refreshing=false;
+      navigator.serviceWorker.addEventListener('controllerchange',()=>{
+        if(refreshing)return;
+        refreshing=true;
+        location.reload();
+      });
+      setInterval(()=>reg.update().catch(()=>{}),60*1000);
+      document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible')reg.update().catch(()=>{})});
+    }catch(e){console.warn('Service Worker non disponibile',e)}
+  });
+}
 renderModes();renderBuilder();renderOutput();

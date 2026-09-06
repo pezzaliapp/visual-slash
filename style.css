@@ -15,3 +15,6 @@
 /* v0.6.0 — dynamic builders */
 .mode-active{outline:2px solid #4da3ff!important}.mode-info strong{color:#d7ff73}.start .recipe-grid:first-of-type{grid-template-columns:repeat(3,1fr)}
 @media(max-width:700px){.start .recipe-grid:first-of-type{grid-template-columns:repeat(2,1fr)}}
+
+/* v0.6.1 — category landing + update UX */
+#modeInfo{scroll-margin-top:18px}
