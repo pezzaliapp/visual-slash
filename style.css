@@ -12,3 +12,6 @@
 .ai-where{padding:15px;border-radius:14px;background:#0f0f0f;border:1px solid rgba(255,255,255,.08)}.ai-where h3{margin:0 0 9px;font-size:1rem}.ai-where p{margin:6px 0;line-height:1.45}.ai-note{display:block;margin-top:12px;color:#999;line-height:1.45}
 @media(max-width:760px){.ai-steps{grid-template-columns:1fr 1fr}}@media(max-width:460px){.ai-steps{grid-template-columns:1fr}}
 .mode-info{margin:14px 0 20px;padding:16px;border:1px solid #2a2a2a;border-radius:14px;background:#111}.mode-info h3{margin:0 0 6px}.mode-info p{margin:0;color:#aaa}.recipe.mode-active{outline:2px solid #f2c94c;background:#181818}.recipe .mode-slash{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;color:#f2c94c;font-size:12px}
+/* v0.6.0 — dynamic builders */
+.mode-active{outline:2px solid #4da3ff!important}.mode-info strong{color:#d7ff73}.start .recipe-grid:first-of-type{grid-template-columns:repeat(3,1fr)}
+@media(max-width:700px){.start .recipe-grid:first-of-type{grid-template-columns:repeat(2,1fr)}}
