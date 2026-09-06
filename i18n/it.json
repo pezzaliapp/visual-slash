@@ -1,0 +1,82 @@
+{
+  "ui": {
+    "langName": "Italiano",
+    "chooseLanguage": "In che lingua vuoi vedere e usare Visual Slash?",
+    "chooseLanguageSub": "Puoi cambiarla in qualsiasi momento dal pulsante 🌐. La scelta resta salvata solo su questo dispositivo.",
+    "continue": "USA QUESTA LINGUA",
+    "detected": "Lingua del dispositivo rilevata",
+    "tagline": "Dì all’AI cosa vuoi ottenere.",
+    "hero1": "Costruisci il prompt.",
+    "hero2": "Un blocco alla volta.",
+    "heroP": "Non devi conoscere i prompt. Scegli cosa vuoi ottenere — immagine, documento, dati, presentazione, testo o codice — e Visual Slash ti aiuta a costruire istruzioni chiare per l’AI.",
+    "before": "PRIMA DI INIZIARE",
+    "guideTitle": "Visual Slash non crea il risultato: prepara le istruzioni.",
+    "guideLead": "Costruisci qui un prompt in linguaggio naturale, poi copialo nella tua AI. Puoi usarlo per immagini, documenti, analisi di dati, presentazioni, testi e codice, se lo strumento scelto supporta quel tipo di attività.",
+    "steps": [
+      "SCEGLI|Cosa vuoi ottenere.",
+      "COSTRUISCI|Visual Slash prepara le istruzioni.",
+      "COPIA|Prendi il prompt completo.",
+      "USA|Incollalo nella tua AI."
+    ],
+    "note": "Le capacità dipendono dall’AI utilizzata. Visual Slash è indipendente e non è affiliato o sponsorizzato dai fornitori di AI.",
+    "start": "PARTI DA QUI",
+    "what": "Cosa vuoi ottenere?",
+    "whatSub": "Scegli una categoria. Non serve conoscere i termini tecnici.",
+    "dontKnow": "Non so cosa scegliere",
+    "advisor": "Scrivi sotto cosa vuoi ottenere con parole tue. Visual Slash ti propone una combinazione di partenza, senza usare servizi esterni.",
+    "suggest": "SUGGERISCIMI LE SCELTE",
+    "subject": "COSA VUOI CREARE?",
+    "why": "Perché queste scelte?",
+    "slashOut": "VISUAL SLASH",
+    "promptOut": "PROMPT GENERATO",
+    "copySlash": "COPIA SLASH",
+    "copyPrompt": "COPIA PROMPT",
+    "share": "CONDIVIDI",
+    "reset": "AZZERA",
+    "install": "INSTALLA APP",
+    "aboutTitle": "Cos'è Visual Slash?",
+    "about": "Un assistente indipendente e open source per costruire prompt chiari e riutilizzabili. Ti aiuta a chiedere immagini, documenti, analisi, presentazioni, testi e codice senza dover conoscere il linguaggio del prompting. Le funzioni disponibili dipendono dall’AI in cui incolli il prompt.",
+    "useFor": "Usalo per",
+    "selectedNone": "Scegli una o più voci",
+    "promptEmpty": "Il prompt apparirà qui.",
+    "objective": "Obiettivo",
+    "resultType": "Tipo di risultato",
+    "requirements": "Requisiti richiesti",
+    "finalCheck": "Prima di finalizzare, verifica che il risultato rispetti l’obiettivo e non inventare informazioni mancanti.",
+    "chooseOptions": "Scegli le opzioni sopra per definire il risultato.",
+    "whyIntro": "Ora scegli tipo, stile/contenuto e formato di consegna.",
+    "writeFirst": "Scrivi prima cosa vuoi ottenere, anche con una frase semplice.",
+    "recommend": "Ti consiglio",
+    "prepared": "Ho preparato una combinazione di partenza che puoi modificare.",
+    "recipeHint": "Compila automaticamente una combinazione di partenza.",
+    "categoryChange": "Le scelte qui sotto cambiano in base a questa categoria."
+  },
+  "modes": {
+    "image": [
+      "Un’immagine",
+      "Foto, infografiche, poster, disegni e modifiche a immagini."
+    ],
+    "document": [
+      "Un documento",
+      "Report, offerte, manuali, lettere e documenti strutturati."
+    ],
+    "data": [
+      "Analizzare dati",
+      "Confronti, tabelle, sintesi, grafici e fogli di calcolo."
+    ],
+    "presentation": [
+      "Una presentazione",
+      "Slide, pitch, presentazioni commerciali e formazione."
+    ],
+    "text": [
+      "Un testo",
+      "Email, post, articoli, riscritture e riassunti."
+    ],
+    "code": [
+      "Del codice",
+      "PWA, HTML, JavaScript, Python, debugging e documentazione."
+    ]
+  },
+  "groups": null,
+  "slashLabels": {}
+}

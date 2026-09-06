@@ -1,1 +1,275 @@
-
+{
+  "ui": {
+    "langName": "Deutsch",
+    "chooseLanguage": "In welcher Sprache möchtest du Visual Slash sehen und verwenden?",
+    "chooseLanguageSub": "Du kannst sie jederzeit über 🌐 ändern. Die Auswahl wird nur auf diesem Gerät gespeichert.",
+    "continue": "DIESE SPRACHE VERWENDEN",
+    "detected": "Gerätesprache erkannt",
+    "tagline": "Sag der KI, was du erhalten möchtest.",
+    "hero1": "Baue den Prompt.",
+    "hero2": "Block für Block.",
+    "heroP": "Du musst Prompting nicht kennen. Wähle, was du erhalten möchtest — Bild, Dokument, Datenanalyse, Präsentation, Text oder Code — und Visual Slash erstellt klare Anweisungen für die KI.",
+    "before": "BEVOR DU BEGINNST",
+    "guideTitle": "Visual Slash erstellt nicht das Ergebnis, sondern die Anweisungen.",
+    "guideLead": "Erstelle hier einen Prompt in natürlicher Sprache und kopiere ihn anschließend in deine KI. Geeignet für Bilder, Dokumente, Datenanalysen, Präsentationen, Texte und Code, sofern das gewählte KI-Werkzeug diese Aufgabe unterstützt.",
+    "steps": [
+      "WÄHLEN|Was du erhalten möchtest.",
+      "ERSTELLEN|Visual Slash baut die Anweisungen.",
+      "KOPIEREN|Den vollständigen Prompt übernehmen.",
+      "VERWENDEN|In deine KI einfügen."
+    ],
+    "note": "Die Möglichkeiten hängen von der verwendeten KI ab. Visual Slash ist unabhängig und nicht mit KI-Anbietern verbunden oder von ihnen gesponsert.",
+    "start": "HIER STARTEN",
+    "what": "Was möchtest du erhalten?",
+    "whatSub": "Wähle eine Kategorie. Technische Begriffe musst du nicht kennen.",
+    "dontKnow": "Ich weiß nicht, was ich wählen soll",
+    "advisor": "Beschreibe unten mit eigenen Worten, was du erhalten möchtest. Visual Slash schlägt lokal eine Startkombination vor.",
+    "suggest": "AUSWAHL VORSCHLAGEN",
+    "subject": "WAS MÖCHTEST DU ERSTELLEN?",
+    "why": "Warum diese Auswahl?",
+    "slashOut": "VISUAL SLASH",
+    "promptOut": "ERSTELLTER PROMPT",
+    "copySlash": "SLASH KOPIEREN",
+    "copyPrompt": "PROMPT KOPIEREN",
+    "share": "TEILEN",
+    "reset": "ZURÜCKSETZEN",
+    "install": "APP INSTALLIEREN",
+    "aboutTitle": "Was ist Visual Slash?",
+    "about": "Ein unabhängiger Open-Source-Assistent zum Erstellen klarer, wiederverwendbarer Prompts. Er hilft bei Bildern, Dokumenten, Analysen, Präsentationen, Texten und Code, ohne Prompting-Fachbegriffe vorauszusetzen.",
+    "useFor": "Geeignet für",
+    "selectedNone": "Wähle eine oder mehrere Optionen",
+    "promptEmpty": "Der Prompt erscheint hier.",
+    "objective": "Ziel",
+    "resultType": "Ergebnistyp",
+    "requirements": "Gewünschte Anforderungen",
+    "finalCheck": "Prüfe vor dem Abschluss, ob das Ergebnis dem Ziel entspricht, und erfinde keine fehlenden Informationen.",
+    "chooseOptions": "Wähle oben Optionen, um das Ergebnis zu definieren.",
+    "whyIntro": "Wähle nun Typ, Stil/Inhalt und Ausgabeformat.",
+    "writeFirst": "Beschreibe zuerst in einem einfachen Satz, was du erhalten möchtest.",
+    "recommend": "Meine Empfehlung",
+    "prepared": "Ich habe eine Startkombination vorbereitet, die du ändern kannst.",
+    "recipeHint": "Füllt automatisch eine sinnvolle Startkombination aus.",
+    "categoryChange": "Die Auswahl unten ändert sich je nach Kategorie."
+  },
+  "modes": {
+    "image": [
+      "Ein Bild",
+      "Fotos, Infografiken, Plakate, Zeichnungen und Bildbearbeitung."
+    ],
+    "document": [
+      "Ein Dokument",
+      "Berichte, Angebote, Handbücher, Briefe und strukturierte Dokumente."
+    ],
+    "data": [
+      "Daten analysieren",
+      "Vergleiche, Tabellen, Zusammenfassungen, Diagramme und Tabellenkalkulationen."
+    ],
+    "presentation": [
+      "Eine Präsentation",
+      "Folien, Pitches, Verkaufs- und Schulungspräsentationen."
+    ],
+    "text": [
+      "Ein Text",
+      "E-Mails, Beiträge, Artikel, Überarbeitungen und Zusammenfassungen."
+    ],
+    "code": [
+      "Code",
+      "PWA, HTML, JavaScript, Python, Debugging und Dokumentation."
+    ]
+  },
+  "groups": {
+    "image": [
+      [
+        "01 · FORMAT",
+        "Welche Art von Bild möchtest du?"
+      ],
+      [
+        "02 · STIL",
+        "Wie soll es aussehen?"
+      ],
+      [
+        "03 · ZWECK",
+        "Wo oder wofür wird es verwendet?"
+      ],
+      [
+        "04 · VORGABEN",
+        "Was darf nicht verändert werden?"
+      ]
+    ],
+    "document": [
+      [
+        "01 · TYP",
+        "Welches Dokument möchtest du erstellen?"
+      ],
+      [
+        "02 · STIL",
+        "Wie soll es geschrieben sein?"
+      ],
+      [
+        "03 · INHALT",
+        "Was soll es enthalten?"
+      ],
+      [
+        "04 · DATEIFORMAT",
+        "Wie möchtest du es erhalten?"
+      ]
+    ],
+    "data": [
+      [
+        "01 · AUFGABE",
+        "Was soll mit den Daten gemacht werden?"
+      ],
+      [
+        "02 · DARSTELLUNG",
+        "Wie möchtest du die Ergebnisse verstehen?"
+      ],
+      [
+        "03 · SORGFALT",
+        "Wie sollen die Daten behandelt werden?"
+      ],
+      [
+        "04 · DATEIFORMAT",
+        "Wie möchtest du die Arbeit erhalten?"
+      ]
+    ],
+    "presentation": [
+      [
+        "01 · TYP",
+        "Welche Präsentation brauchst du?"
+      ],
+      [
+        "02 · STIL",
+        "Wie sollen die Folien wirken?"
+      ],
+      [
+        "03 · INHALT",
+        "Was soll die Präsentation enthalten?"
+      ],
+      [
+        "04 · DATEIFORMAT",
+        "Wie möchtest du sie erhalten?"
+      ]
+    ],
+    "text": [
+      [
+        "01 · TYP",
+        "Welchen Text brauchst du?"
+      ],
+      [
+        "02 · TON",
+        "Wie soll er klingen?"
+      ],
+      [
+        "03 · REGELN",
+        "Was soll beibehalten oder geprüft werden?"
+      ],
+      [
+        "04 · AUSGABE",
+        "Wie möchtest du den Text erhalten?"
+      ]
+    ],
+    "code": [
+      [
+        "01 · ERSTELLEN",
+        "Welche Art von Arbeit?"
+      ],
+      [
+        "02 · TECHNOLOGIE",
+        "Welche Technologie?"
+      ],
+      [
+        "03 · QUALITÄT",
+        "Wie soll der Code aufgebaut sein?"
+      ],
+      [
+        "04 · LIEFERUNG",
+        "Was soll geliefert werden?"
+      ]
+    ]
+  },
+  "slashLabels": {
+    "/advertising": "Werbegrafik",
+    "/analysis": "Daten analysieren",
+    "/article": "Artikel",
+    "/before-after": "Vorher-Nachher-Vergleich",
+    "/blueprint": "technische Blueprint-Zeichnung",
+    "/brochure": "Broschüre",
+    "/chart": "Diagramme",
+    "/charts": "Diagramme",
+    "/checklist": "Checkliste",
+    "/clean-data": "Daten bereinigen und vereinheitlichen",
+    "/comic": "Comic in Bildern",
+    "/commercial": "Verkaufspräsentation",
+    "/comparison": "Vergleich",
+    "/complete-files": "vollständige, direkt nutzbare Dateien",
+    "/concise": "kurz und auf den Punkt",
+    "/cross-section": "Schnittansicht, die das Innere zeigt",
+    "/csv": "CSV-Datei",
+    "/data": "Zahlen in den Mittelpunkt stellen",
+    "/debug": "Codefehler finden und beheben",
+    "/detailed": "ausführliches Ergebnis",
+    "/document-code": "Code dokumentieren",
+    "/docx": "bearbeitbare Word-DOCX-Datei",
+    "/drawing": "gezeichnete Illustration",
+    "/editorial": "sauberer Magazin-Stil",
+    "/email": "E-Mail",
+    "/executive": "für Geschäftsleitung und Entscheider",
+    "/executive-summary": "kurze Zusammenfassung am Anfang",
+    "/explain": "Ergebnisse einfach erklären",
+    "/fact-check": "Fakten überprüfen",
+    "/film-strip": "Abfolge von Bildern über die Zeit",
+    "/forecast": "Prognose nur auf Basis vorhandener Daten",
+    "/how-it-works": "zeigen, wie etwas funktioniert",
+    "/html": "HTML und CSS",
+    "/infographic": "Informationen auf einer leicht verständlichen visuellen Seite mit Titeln, Zahlen, Symbolen und Pfeilen",
+    "/javascript": "JavaScript",
+    "/keep-meaning": "ursprüngliche Bedeutung beibehalten",
+    "/keep-original": "nur das Gewünschte ändern und das Originalbild sonst unverändert lassen",
+    "/kpi": "wichtigste Kennzahlen hervorheben",
+    "/letter": "Brief",
+    "/linkedin": "für LinkedIn optimierte Grafik",
+    "/linkedin-post": "LinkedIn-Beitrag",
+    "/low-text": "sehr wenig Text",
+    "/manual": "Schritt-für-Schritt-Handbuch oder Anleitung",
+    "/md": "Markdown-Datei",
+    "/minimal": "nur die wesentlichen Elemente",
+    "/no-ai-look": "natürliches Ergebnis ohne typischen KI-Look",
+    "/no-hype": "keine Übertreibungen oder marktschreierischen Aussagen",
+    "/no-invent": "fehlende Informationen nicht erfinden",
+    "/no-text": "kein Text im Bild",
+    "/offline": "wenn möglich offline funktionsfähig",
+    "/pdf": "fertige PDF-Datei",
+    "/persuasive": "überzeugend, aber glaubwürdig",
+    "/photorealistic": "sieht wie ein echtes Foto aus",
+    "/pitch": "kurze überzeugende Pitch-Präsentation",
+    "/plain-text": "Ausgabe als reiner Text",
+    "/poster": "ein einzelnes starkes Plakatmotiv",
+    "/pptx": "bearbeitbare PowerPoint-PPTX-Datei",
+    "/presentation": "Folienpräsentation",
+    "/preserve-logo": "Logo nicht verändern",
+    "/preserve-product": "Produkt nicht neu gestalten oder verändern",
+    "/privacy": "Daten lokal halten und Weitergabe minimieren",
+    "/professional": "professioneller Ton und Aufbau",
+    "/proposal": "Angebot oder Vorschlag",
+    "/pwa": "installierbare Progressive Web App",
+    "/python": "Python",
+    "/report": "strukturierter Bericht",
+    "/rewrite": "Text besser umschreiben",
+    "/script": "kleines Automatisierungsskript",
+    "/simple": "einfache Sprache und Struktur",
+    "/sources": "Quellen nennen und prüfen",
+    "/speaker-notes": "Sprechernotizen zu jeder Folie",
+    "/strict": "Vorgaben wörtlich einhalten",
+    "/summary": "Zusammenfassung der wichtigsten Punkte",
+    "/table": "Tabellen",
+    "/technical": "präziser technischer Stil",
+    "/timeline": "Ereignisse zeitlich ordnen",
+    "/training": "Schulungspräsentation",
+    "/txt": "einfache TXT-Datei",
+    "/verify": "Datenqualität vor Schlussfolgerungen prüfen",
+    "/visual": "visuell arbeiten und wenig Text verwenden",
+    "/website": "responsive Website",
+    "/xlsx": "bearbeitbare Excel-XLSX-Datei",
+    "/zip": "ZIP-Archiv des Projekts"
+  }
+}

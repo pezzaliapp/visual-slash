@@ -1,0 +1,275 @@
+{
+  "ui": {
+    "langName": "Français",
+    "chooseLanguage": "Dans quelle langue souhaitez-vous voir et utiliser Visual Slash ?",
+    "chooseLanguageSub": "Vous pouvez la changer à tout moment avec le bouton 🌐. Le choix est enregistré uniquement sur cet appareil.",
+    "continue": "UTILISER CETTE LANGUE",
+    "detected": "Langue de l’appareil détectée",
+    "tagline": "Dites à l’IA ce que vous voulez obtenir.",
+    "hero1": "Construisez le prompt.",
+    "hero2": "Un bloc à la fois.",
+    "heroP": "Vous n’avez pas besoin de connaître le prompting. Choisissez ce que vous voulez obtenir — image, document, analyse de données, présentation, texte ou code — et Visual Slash construit des instructions claires pour l’IA.",
+    "before": "AVANT DE COMMENCER",
+    "guideTitle": "Visual Slash ne crée pas le résultat : il prépare les instructions.",
+    "guideLead": "Construisez ici un prompt en langage naturel, puis copiez-le dans votre IA. Vous pouvez l’utiliser pour images, documents, analyses, présentations, textes et code si l’outil choisi prend en charge cette tâche.",
+    "steps": [
+      "CHOISIR|Ce que vous voulez obtenir.",
+      "CONSTRUIRE|Visual Slash prépare les instructions.",
+      "COPIER|Prenez le prompt complet.",
+      "UTILISER|Collez-le dans votre IA."
+    ],
+    "note": "Les capacités dépendent de l’IA utilisée. Visual Slash est indépendant et n’est ni affilié ni sponsorisé par les fournisseurs d’IA.",
+    "start": "COMMENCEZ ICI",
+    "what": "Que voulez-vous obtenir ?",
+    "whatSub": "Choisissez une catégorie. Aucun terme technique n’est nécessaire.",
+    "dontKnow": "Je ne sais pas quoi choisir",
+    "advisor": "Écrivez ci-dessous, avec vos mots, ce que vous voulez obtenir. Visual Slash propose une combinaison de départ sans service externe.",
+    "suggest": "SUGGÉRER DES OPTIONS",
+    "subject": "QUE VOULEZ-VOUS CRÉER ?",
+    "why": "Pourquoi ces choix ?",
+    "slashOut": "VISUAL SLASH",
+    "promptOut": "PROMPT GÉNÉRÉ",
+    "copySlash": "COPIER LES SLASH",
+    "copyPrompt": "COPIER LE PROMPT",
+    "share": "PARTAGER",
+    "reset": "RÉINITIALISER",
+    "install": "INSTALLER L’APP",
+    "aboutTitle": "Qu’est-ce que Visual Slash ?",
+    "about": "Un assistant indépendant et open source pour créer des prompts clairs et réutilisables. Il aide à demander images, documents, analyses, présentations, textes et code sans connaître le vocabulaire du prompting.",
+    "useFor": "À utiliser pour",
+    "selectedNone": "Choisissez une ou plusieurs options",
+    "promptEmpty": "Le prompt apparaîtra ici.",
+    "objective": "Objectif",
+    "resultType": "Type de résultat",
+    "requirements": "Exigences demandées",
+    "finalCheck": "Avant de finaliser, vérifiez que le résultat respecte l’objectif et n’inventez aucune information manquante.",
+    "chooseOptions": "Choisissez les options ci-dessus pour définir le résultat.",
+    "whyIntro": "Choisissez maintenant le type, le style/contenu et le format de livraison.",
+    "writeFirst": "Écrivez d’abord ce que vous souhaitez obtenir, même avec une phrase simple.",
+    "recommend": "Je recommande",
+    "prepared": "J’ai préparé une combinaison de départ que vous pouvez modifier.",
+    "recipeHint": "Remplit automatiquement une combinaison de départ utile.",
+    "categoryChange": "Les choix ci-dessous changent selon cette catégorie."
+  },
+  "modes": {
+    "image": [
+      "Une image",
+      "Photos, infographies, affiches, dessins et retouches d’images."
+    ],
+    "document": [
+      "Un document",
+      "Rapports, offres, manuels, lettres et documents structurés."
+    ],
+    "data": [
+      "Analyser des données",
+      "Comparaisons, tableaux, résumés, graphiques et feuilles de calcul."
+    ],
+    "presentation": [
+      "Une présentation",
+      "Diapositives, pitchs, présentations commerciales et formation."
+    ],
+    "text": [
+      "Un texte",
+      "E-mails, publications, articles, réécritures et résumés."
+    ],
+    "code": [
+      "Du code",
+      "PWA, HTML, JavaScript, Python, débogage et documentation."
+    ]
+  },
+  "groups": {
+    "image": [
+      [
+        "01 · FORMAT",
+        "Quel type d’image voulez-vous ?"
+      ],
+      [
+        "02 · STYLE",
+        "Quel aspect souhaitez-vous ?"
+      ],
+      [
+        "03 · OBJECTIF",
+        "Où ou pourquoi allez-vous l’utiliser ?"
+      ],
+      [
+        "04 · CONTRAINTES",
+        "Qu’est-ce qui ne doit pas être modifié ?"
+      ]
+    ],
+    "document": [
+      [
+        "01 · TYPE",
+        "Quel document voulez-vous créer ?"
+      ],
+      [
+        "02 · STYLE",
+        "Comment doit-il être rédigé ?"
+      ],
+      [
+        "03 · CONTENU",
+        "Que doit-il contenir ?"
+      ],
+      [
+        "04 · FORMAT DE FICHIER",
+        "Comment voulez-vous le recevoir ?"
+      ]
+    ],
+    "data": [
+      [
+        "01 · TÂCHE",
+        "Que voulez-vous faire avec les données ?"
+      ],
+      [
+        "02 · AFFICHAGE",
+        "Comment voulez-vous comprendre les résultats ?"
+      ],
+      [
+        "03 · RIGUEUR",
+        "Comment les données doivent-elles être traitées ?"
+      ],
+      [
+        "04 · FORMAT DE FICHIER",
+        "Comment voulez-vous recevoir le travail ?"
+      ]
+    ],
+    "presentation": [
+      [
+        "01 · TYPE",
+        "Quelle présentation vous faut-il ?"
+      ],
+      [
+        "02 · STYLE",
+        "Quel aspect doivent avoir les diapositives ?"
+      ],
+      [
+        "03 · CONTENU",
+        "Que doit contenir la présentation ?"
+      ],
+      [
+        "04 · FORMAT DE FICHIER",
+        "Comment voulez-vous la recevoir ?"
+      ]
+    ],
+    "text": [
+      [
+        "01 · TYPE",
+        "Quel texte vous faut-il ?"
+      ],
+      [
+        "02 · TON",
+        "Quel ton doit-il avoir ?"
+      ],
+      [
+        "03 · RÈGLES",
+        "Que faut-il conserver ou vérifier ?"
+      ],
+      [
+        "04 · SORTIE",
+        "Comment voulez-vous recevoir le texte ?"
+      ]
+    ],
+    "code": [
+      [
+        "01 · CRÉER",
+        "Quel type de travail ?"
+      ],
+      [
+        "02 · TECHNOLOGIE",
+        "Avec quelle technologie ?"
+      ],
+      [
+        "03 · QUALITÉ",
+        "Comment le code doit-il être construit ?"
+      ],
+      [
+        "04 · LIVRAISON",
+        "Que faut-il livrer ?"
+      ]
+    ]
+  },
+  "slashLabels": {
+    "/advertising": "visuel publicitaire",
+    "/analysis": "analyser les données",
+    "/article": "article",
+    "/before-after": "comparaison avant/après",
+    "/blueprint": "plan technique de type blueprint",
+    "/brochure": "brochure",
+    "/chart": "graphiques",
+    "/charts": "graphiques",
+    "/checklist": "liste de contrôle",
+    "/clean-data": "nettoyer et normaliser les données",
+    "/comic": "bande dessinée en cases",
+    "/commercial": "présentation commerciale",
+    "/comparison": "comparaison",
+    "/complete-files": "fichiers complets prêts à l’emploi",
+    "/concise": "court et direct",
+    "/cross-section": "vue en coupe montrant l’intérieur",
+    "/csv": "fichier CSV",
+    "/data": "mettre les chiffres au premier plan",
+    "/debug": "trouver et corriger une erreur de code",
+    "/detailed": "résultat détaillé",
+    "/document-code": "documenter le code",
+    "/docx": "fichier Word DOCX modifiable",
+    "/drawing": "illustration dessinée",
+    "/editorial": "style propre de magazine",
+    "/email": "e-mail",
+    "/executive": "pour direction et décideurs",
+    "/executive-summary": "court résumé exécutif au début",
+    "/explain": "expliquer les résultats avec des mots simples",
+    "/fact-check": "vérifier les faits",
+    "/film-strip": "suite d’images dans le temps",
+    "/forecast": "prévision basée uniquement sur les données disponibles",
+    "/how-it-works": "montrer comment quelque chose fonctionne",
+    "/html": "HTML et CSS",
+    "/infographic": "informations expliquées sur une page visuelle simple avec titres, chiffres, icônes et flèches",
+    "/javascript": "JavaScript",
+    "/keep-meaning": "conserver le sens d’origine",
+    "/keep-original": "modifier uniquement ce qui est demandé et conserver le reste de l’image originale",
+    "/kpi": "mettre en évidence les indicateurs clés",
+    "/letter": "lettre",
+    "/linkedin": "visuel optimisé pour LinkedIn",
+    "/linkedin-post": "publication LinkedIn",
+    "/low-text": "très peu de texte",
+    "/manual": "manuel ou guide étape par étape",
+    "/md": "fichier Markdown",
+    "/minimal": "uniquement les éléments essentiels",
+    "/no-ai-look": "résultat naturel qui ne semble pas manifestement généré par IA",
+    "/no-hype": "éviter les exagérations et le battage",
+    "/no-invent": "ne pas inventer les informations manquantes",
+    "/no-text": "aucun texte dans l’image",
+    "/offline": "fonctionne hors ligne lorsque c’est possible",
+    "/pdf": "fichier PDF final",
+    "/persuasive": "persuasif mais crédible",
+    "/photorealistic": "ressemble à une vraie photographie",
+    "/pitch": "courte présentation persuasive",
+    "/plain-text": "sortie en texte brut",
+    "/poster": "une seule affiche visuelle forte",
+    "/pptx": "fichier PowerPoint PPTX modifiable",
+    "/presentation": "présentation de diapositives",
+    "/preserve-logo": "ne pas modifier le logo",
+    "/preserve-product": "ne pas redessiner ni modifier le produit",
+    "/privacy": "garder les données localement et minimiser leur partage",
+    "/professional": "ton et structure professionnels",
+    "/proposal": "proposition ou offre commerciale",
+    "/pwa": "Progressive Web App installable",
+    "/python": "Python",
+    "/report": "rapport structuré",
+    "/rewrite": "mieux réécrire le texte",
+    "/script": "petit script d’automatisation",
+    "/simple": "langage et structure simples",
+    "/sources": "indiquer et vérifier les sources",
+    "/speaker-notes": "notes du présentateur pour chaque diapositive",
+    "/strict": "respecter les contraintes à la lettre",
+    "/summary": "résumé des points importants",
+    "/table": "tableaux",
+    "/technical": "style technique précis",
+    "/timeline": "événements ordonnés dans le temps",
+    "/training": "présentation de formation",
+    "/txt": "fichier TXT simple",
+    "/verify": "vérifier la qualité des données avant de conclure",
+    "/visual": "utiliser des visuels et peu de texte",
+    "/website": "site web responsive",
+    "/xlsx": "fichier Excel XLSX modifiable",
+    "/zip": "archive ZIP du projet"
+  }
+}

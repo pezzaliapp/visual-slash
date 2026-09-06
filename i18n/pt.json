@@ -1,0 +1,275 @@
+{
+  "ui": {
+    "langName": "Português",
+    "chooseLanguage": "Em que idioma quer ver e usar o Visual Slash?",
+    "chooseLanguageSub": "Pode alterar a qualquer momento com o botão 🌐. A escolha fica guardada apenas neste dispositivo.",
+    "continue": "USAR ESTE IDIOMA",
+    "detected": "Idioma do dispositivo detetado",
+    "tagline": "Diga à IA o que quer obter.",
+    "hero1": "Construa o prompt.",
+    "hero2": "Um bloco de cada vez.",
+    "heroP": "Não precisa conhecer prompting. Escolha o que quer obter — imagem, documento, análise de dados, apresentação, texto ou código — e o Visual Slash ajuda a criar instruções claras para a IA.",
+    "before": "ANTES DE COMEÇAR",
+    "guideTitle": "O Visual Slash não cria o resultado: prepara as instruções.",
+    "guideLead": "Crie aqui um prompt em linguagem natural e depois copie-o para a sua IA. Pode usá-lo para imagens, documentos, análises, apresentações, textos e código, se a ferramenta escolhida suportar essa tarefa.",
+    "steps": [
+      "ESCOLHA|O que quer obter.",
+      "CONSTRUA|O Visual Slash prepara as instruções.",
+      "COPIE|Obtenha o prompt completo.",
+      "USE|Cole-o na sua IA."
+    ],
+    "note": "As capacidades dependem da IA utilizada. O Visual Slash é independente e não é afiliado nem patrocinado por fornecedores de IA.",
+    "start": "COMECE AQUI",
+    "what": "O que quer obter?",
+    "whatSub": "Escolha uma categoria. Não precisa conhecer termos técnicos.",
+    "dontKnow": "Não sei o que escolher",
+    "advisor": "Escreva abaixo, com as suas palavras, o que quer obter. O Visual Slash propõe uma combinação inicial sem serviços externos.",
+    "suggest": "SUGERIR OPÇÕES",
+    "subject": "O QUE QUER CRIAR?",
+    "why": "Porquê estas escolhas?",
+    "slashOut": "VISUAL SLASH",
+    "promptOut": "PROMPT GERADO",
+    "copySlash": "COPIAR SLASH",
+    "copyPrompt": "COPIAR PROMPT",
+    "share": "PARTILHAR",
+    "reset": "REINICIAR",
+    "install": "INSTALAR APP",
+    "aboutTitle": "O que é o Visual Slash?",
+    "about": "Um assistente independente e open source para criar prompts claros e reutilizáveis. Ajuda a pedir imagens, documentos, análises, apresentações, textos e código sem conhecer a terminologia de prompting.",
+    "useFor": "Use para",
+    "selectedNone": "Escolha uma ou mais opções",
+    "promptEmpty": "O prompt aparecerá aqui.",
+    "objective": "Objetivo",
+    "resultType": "Tipo de resultado",
+    "requirements": "Requisitos pedidos",
+    "finalCheck": "Antes de finalizar, confirme que o resultado respeita o objetivo e não invente informações em falta.",
+    "chooseOptions": "Escolha as opções acima para definir o resultado.",
+    "whyIntro": "Agora escolha tipo, estilo/conteúdo e formato de entrega.",
+    "writeFirst": "Primeiro escreva o que quer obter, mesmo com uma frase simples.",
+    "recommend": "Recomendo",
+    "prepared": "Preparei uma combinação inicial que pode alterar.",
+    "recipeHint": "Preenche automaticamente uma combinação inicial útil.",
+    "categoryChange": "As opções abaixo mudam de acordo com esta categoria."
+  },
+  "modes": {
+    "image": [
+      "Uma imagem",
+      "Fotos, infográficos, cartazes, desenhos e edição de imagens."
+    ],
+    "document": [
+      "Um documento",
+      "Relatórios, propostas, manuais, cartas e documentos estruturados."
+    ],
+    "data": [
+      "Analisar dados",
+      "Comparações, tabelas, resumos, gráficos e folhas de cálculo."
+    ],
+    "presentation": [
+      "Uma apresentação",
+      "Slides, pitches, apresentações comerciais e formação."
+    ],
+    "text": [
+      "Um texto",
+      "E-mails, publicações, artigos, reescritas e resumos."
+    ],
+    "code": [
+      "Código",
+      "PWA, HTML, JavaScript, Python, depuração e documentação."
+    ]
+  },
+  "groups": {
+    "image": [
+      [
+        "01 · FORMATO",
+        "Que tipo de imagem quer?"
+      ],
+      [
+        "02 · ESTILO",
+        "Como quer que pareça?"
+      ],
+      [
+        "03 · OBJETIVO",
+        "Onde ou para que a vai usar?"
+      ],
+      [
+        "04 · RESTRIÇÕES",
+        "O que não deve ser alterado?"
+      ]
+    ],
+    "document": [
+      [
+        "01 · TIPO",
+        "Que documento quer criar?"
+      ],
+      [
+        "02 · ESTILO",
+        "Como deve ser escrito?"
+      ],
+      [
+        "03 · CONTEÚDO",
+        "O que deve conter?"
+      ],
+      [
+        "04 · FORMATO DO FICHEIRO",
+        "Como quer recebê-lo?"
+      ]
+    ],
+    "data": [
+      [
+        "01 · TAREFA",
+        "O que quer fazer com os dados?"
+      ],
+      [
+        "02 · APRESENTAÇÃO",
+        "Como quer compreender os resultados?"
+      ],
+      [
+        "03 · RIGOR",
+        "Como devem ser tratados os dados?"
+      ],
+      [
+        "04 · FORMATO DO FICHEIRO",
+        "Como quer receber o trabalho?"
+      ]
+    ],
+    "presentation": [
+      [
+        "01 · TIPO",
+        "Que apresentação precisa?"
+      ],
+      [
+        "02 · ESTILO",
+        "Como devem parecer os slides?"
+      ],
+      [
+        "03 · CONTEÚDO",
+        "O que deve incluir a apresentação?"
+      ],
+      [
+        "04 · FORMATO DO FICHEIRO",
+        "Como quer recebê-la?"
+      ]
+    ],
+    "text": [
+      [
+        "01 · TIPO",
+        "Que texto precisa?"
+      ],
+      [
+        "02 · TOM",
+        "Como deve soar?"
+      ],
+      [
+        "03 · REGRAS",
+        "O que deve ser preservado ou verificado?"
+      ],
+      [
+        "04 · SAÍDA",
+        "Como quer receber o texto?"
+      ]
+    ],
+    "code": [
+      [
+        "01 · CRIAR",
+        "Que tipo de trabalho?"
+      ],
+      [
+        "02 · TECNOLOGIA",
+        "Com que tecnologia?"
+      ],
+      [
+        "03 · QUALIDADE",
+        "Como deve ser construído o código?"
+      ],
+      [
+        "04 · ENTREGA",
+        "O que deve ser entregue?"
+      ]
+    ]
+  },
+  "slashLabels": {
+    "/advertising": "imagem publicitária",
+    "/analysis": "analisar os dados",
+    "/article": "artigo",
+    "/before-after": "comparação antes e depois",
+    "/blueprint": "desenho técnico tipo blueprint",
+    "/brochure": "brochura",
+    "/chart": "gráficos",
+    "/charts": "gráficos",
+    "/checklist": "lista de verificação",
+    "/clean-data": "limpar e normalizar os dados",
+    "/comic": "história em quadrinhos",
+    "/commercial": "apresentação comercial",
+    "/comparison": "comparação",
+    "/complete-files": "arquivos completos prontos para usar",
+    "/concise": "curto e direto",
+    "/cross-section": "vista em corte que mostra o interior",
+    "/csv": "arquivo CSV",
+    "/data": "colocar os números em destaque",
+    "/debug": "encontrar e corrigir um erro de código",
+    "/detailed": "resultado detalhado",
+    "/document-code": "documentar o código",
+    "/docx": "arquivo Word DOCX editável",
+    "/drawing": "ilustração desenhada",
+    "/editorial": "estilo limpo de revista",
+    "/email": "e-mail",
+    "/executive": "para direção e tomadores de decisão",
+    "/executive-summary": "resumo executivo curto no início",
+    "/explain": "explicar os resultados com palavras simples",
+    "/fact-check": "verificar os fatos",
+    "/film-strip": "sequência de quadros ao longo do tempo",
+    "/forecast": "previsão baseada apenas nos dados disponíveis",
+    "/how-it-works": "mostrar como algo funciona",
+    "/html": "HTML e CSS",
+    "/infographic": "informações explicadas em uma única página visual com títulos, números, ícones e setas",
+    "/javascript": "JavaScript",
+    "/keep-meaning": "manter o significado original",
+    "/keep-original": "alterar apenas o que foi pedido e manter intacta a imagem original",
+    "/kpi": "destacar os principais indicadores",
+    "/letter": "carta",
+    "/linkedin": "visual otimizado para LinkedIn",
+    "/linkedin-post": "publicação no LinkedIn",
+    "/low-text": "muito pouco texto",
+    "/manual": "manual ou guia passo a passo",
+    "/md": "arquivo Markdown",
+    "/minimal": "somente os elementos essenciais",
+    "/no-ai-look": "resultado natural que não pareça claramente gerado por IA",
+    "/no-hype": "evitar exageros e promessas grandiosas",
+    "/no-invent": "não inventar informações ausentes",
+    "/no-text": "sem texto dentro da imagem",
+    "/offline": "funciona offline quando possível",
+    "/pdf": "arquivo PDF final",
+    "/persuasive": "persuasivo, mas crível",
+    "/photorealistic": "parece uma fotografia real",
+    "/pitch": "apresentação curta e persuasiva",
+    "/plain-text": "saída em texto simples",
+    "/poster": "uma única imagem de cartaz impactante",
+    "/pptx": "arquivo PowerPoint PPTX editável",
+    "/presentation": "apresentação de slides",
+    "/preserve-logo": "não alterar o logotipo",
+    "/preserve-product": "não redesenhar nem alterar o produto",
+    "/privacy": "manter os dados locais e minimizar o compartilhamento",
+    "/professional": "tom e estrutura profissionais",
+    "/proposal": "proposta ou oferta comercial",
+    "/pwa": "Progressive Web App instalável",
+    "/python": "Python",
+    "/report": "relatório estruturado",
+    "/rewrite": "reescrever o texto de forma melhor",
+    "/script": "pequeno script de automação",
+    "/simple": "linguagem e estrutura simples",
+    "/sources": "indicar e verificar as fontes",
+    "/speaker-notes": "notas do apresentador para cada slide",
+    "/strict": "seguir as restrições literalmente",
+    "/summary": "resumo dos pontos importantes",
+    "/table": "tabelas",
+    "/technical": "estilo técnico preciso",
+    "/timeline": "eventos ordenados no tempo",
+    "/training": "apresentação de treinamento",
+    "/txt": "arquivo TXT simples",
+    "/verify": "verificar a qualidade dos dados antes de concluir",
+    "/visual": "usar elementos visuais e pouco texto",
+    "/website": "site responsivo",
+    "/xlsx": "arquivo Excel XLSX editável",
+    "/zip": "arquivo ZIP do projeto"
+  }
+}
