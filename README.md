@@ -1,30 +1,60 @@
 # Visual Slash
 
-A lightweight, open vocabulary for composing clear and reusable visual prompts.
+Visual Slash is an independent, open-source prompt builder designed to help people tell an AI what they want without needing to know prompting terminology.
 
-> Visual Slash is **not** an official OpenAI or ChatGPT command language. It is an independent prompting convention.
+> Visual Slash is **not** an official OpenAI, ChatGPT, Google, Anthropic or other AI-provider command language. The `/slash` vocabulary is an independent convention; the generated natural-language prompt is the most portable output.
 
-## Idea
+## What it builds
 
-Choose a **format + style + purpose + constraints**, add the subject, and Visual Slash expands the shorthand into a complete prompt ready to copy.
+Visual Slash includes six dynamic builders:
 
-Example:
+- Images
+- Documents
+- Data analysis
+- Presentations
+- Text
+- Code
 
-`/infographic /technical /linkedin /low-text`
+The available options change according to the selected category. A user can also describe the desired result in ordinary language and get a local rule-based starting combination.
+
+## v0.7.0 — multilingual
+
+Supported languages:
+
+- Italiano (`it`)
+- English (`en`)
+- Deutsch (`de`)
+- Español (`es`)
+- Français (`fr`)
+- Português (`pt`)
+- 简体中文 (`zh-CN`)
+
+On the first launch, Visual Slash asks which language the user wants to use. The browser/device language is detected only to preselect a sensible choice. The final choice is stored locally in `localStorage` and is not sent anywhere. After that, the app opens directly in the saved language. The language can always be changed from the `🌐` button in the header.
+
+The interface, category names, builder questions, guidance, output controls, beginner-friendly slash explanations and generated universal prompt are localized. Missing locale strings fall back to English.
+
+Translation files live in `/i18n/`, so new languages can be added without changing the application structure.
 
 ## PWA
 
 - installable web app
 - offline-first service worker
+- automatic service-worker update checks
+- versioned CSS/JS and network-first `no-store` update strategy
+- local language preference
 - no account
 - no server/database
 - no external API
-- local-only interaction
+- local-only prompt assistance
 - share/copy support
+
+## PWA icons
+
+PNG 192×192 and 512×512, maskable 512×512, Apple touch icon 180×180, favicon 32×32, plus SVG fallback.
 
 ## Local test
 
-Serve the folder over localhost, for example with any static HTTP server. Service workers do not run correctly from a plain `file://` URL.
+Serve the folder over localhost using any static HTTP server. Service workers do not run correctly from a plain `file://` URL.
 
 ## Deploy
 
@@ -34,41 +64,6 @@ Designed for static hosting such as GitHub Pages. HTTPS is required for normal P
 
 Alessandro Pezzali
 
-## Status
+## Version
 
-v0.6.1 — initial functional prototype.
-
-
-## PWA icons
-PNG 192×192 and 512×512, maskable 512×512, Apple touch icon 180×180, favicon 32×32, plus SVG fallback.
-
-
-## v0.6.1
-- Tooltip didattici in linguaggio semplice per ogni slash.
-- Ogni spiegazione include: cosa fa, quando usarlo, esempio.
-- Supporto hover/focus desktop e tocco/focus mobile.
-- Micro-istruzioni per le quattro categorie.
-
-
-## v0.6.1
-- Ricette pronte per obiettivi comuni
-- “Non so cosa scegliere” con suggerimenti locali/offline
-- Sezione “Perché queste scelte?” per imparare mentre si usa il builder
-- Nessuna API o servizio esterno per i suggerimenti
-
-
-## Dove si usa
-Visual Slash non genera direttamente immagini. Costruisce un prompt visuale esteso da copiare in ChatGPT o in un altro strumento di AI generativa compatibile con la creazione/modifica di immagini. Le scorciatoie `/slash` sono un vocabolario indipendente del progetto; per la massima portabilità tra strumenti è consigliato usare il **Prompt generato** in linguaggio naturale.
-
-Le capacità e l’interpretazione del prompt dipendono dallo strumento AI utilizzato. Visual Slash non è affiliato, certificato o sponsorizzato da OpenAI, Google, Anthropic o altri fornitori.
-
-
-## v0.6.1
-Visual Slash ora include sei aree: immagini, documenti, dati, presentazioni, testi e codice. Il prompt esteso resta in linguaggio naturale per essere portabile tra strumenti AI compatibili.
-
-
-## v0.6.1
-- Selezionando una categoria, la vista si ferma sulla scheda della categoria e sulle ricette, prima del builder.
-- Service Worker aggiornato con network-first `no-store`, `skipWaiting` e `clients.claim`.
-- Controllo aggiornamenti all'avvio, al ritorno in primo piano e periodicamente; ricarica automatica quando entra in funzione una nuova versione.
-- CSS e JS versionati per ridurre i problemi di cache del browser/CDN.
+v0.7.0

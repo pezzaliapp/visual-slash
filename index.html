@@ -1,1 +1,41 @@
-<!doctype html><html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#111111"><title>Visual Slash</title><link rel="manifest" href="manifest.webmanifest"><link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png"><link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png"><link rel="stylesheet" href="style.css?v=0.6.1"></head><body><header><div class="brand">/ VISUAL SLASH</div><div class="tag">Dì all’AI cosa vuoi ottenere.</div></header><main><section class="hero"><h1>Costruisci il prompt.<br><span>Un blocco alla volta.</span></h1><p>Non devi conoscere i prompt. Scegli cosa vuoi ottenere — immagine, documento, dati, presentazione, testo o codice — e Visual Slash ti aiuta a costruire istruzioni chiare per l’AI.</p></section><section class="ai-guide"><span class="eyebrow">PRIMA DI INIZIARE</span><h2>Visual Slash non crea il risultato: prepara le istruzioni.</h2><p class="lead">Costruisci qui un <strong>prompt in linguaggio naturale</strong>, poi copialo nella tua AI. Puoi usarlo per immagini, documenti, analisi di dati, presentazioni, testi e codice, se lo strumento scelto supporta quel tipo di attività.</p><div class="ai-steps"><div class="ai-step"><b>1 · SCEGLI</b>Cosa vuoi ottenere.</div><div class="ai-step"><b>2 · COSTRUISCI</b>Visual Slash prepara le istruzioni.</div><div class="ai-step"><b>3 · COPIA</b>Prendi il prompt completo.</div><div class="ai-step"><b>4 · USA</b>Incollalo nella tua AI.</div></div><small class="ai-note">Le capacità dipendono dall’AI utilizzata. Visual Slash è indipendente e non è affiliato o sponsorizzato dai fornitori di AI.</small></section><section class="start"><div class="start-head"><div><span class="eyebrow">PARTI DA QUI</span><h2>Cosa vuoi ottenere?</h2><p>Scegli una categoria. Non serve conoscere i termini tecnici.</p></div></div><div id="modeGrid" class="recipe-grid"></div><div id="modeInfo" class="mode-info"></div><div id="recipeGrid" class="recipe-grid"></div><div class="advisor"><div><strong>Non so cosa scegliere</strong><p>Scrivi sotto cosa vuoi ottenere con parole tue. Visual Slash ti propone una combinazione di partenza, senza usare servizi esterni.</p></div><button id="helpChoose">SUGGERISCIMI LE SCELTE</button><small id="advisorMsg"></small></div></section><section id="builder"></section><section class="subject"><label for="subject">COSA VUOI CREARE?</label><textarea id="subject" placeholder="Es. Mostra una cella temporalesca osservata ora e la posizione prevista tra 40 minuti."></textarea></section><section id="whyBox" class="why-box"><h3>Perché queste scelte?</h3><p>Quando scegli una voce, qui ti spiego in parole semplici perché può essere utile.</p></section><section class="output"><div class="output-head"><span>VISUAL SLASH</span><button id="copySlash">COPIA SLASH</button></div><code id="slashLine">Scegli almeno una voce</code><div class="output-head prompt-head"><span>PROMPT GENERATO</span><button id="copyPrompt">COPIA PROMPT</button></div><div id="promptText">Il prompt apparirà qui.</div></section><section class="actions"><button id="share">CONDIVIDI</button><button id="reset" class="ghost">AZZERA</button><button id="install" class="ghost" hidden>INSTALLA APP</button></section><section class="about"><h2>Cos'è Visual Slash?</h2><p>Un assistente indipendente e open source per costruire prompt chiari e riutilizzabili. Ti aiuta a chiedere immagini, documenti, analisi, presentazioni, testi e codice senza dover conoscere il linguaggio del prompting. Le funzioni disponibili dipendono dall’AI in cui incolli il prompt.</p></section></main><footer>Visual Slash v0.6.1 · Alessandro Pezzali · Open source</footer><script src="app.js?v=0.6.1"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#111111">
+<title>Visual Slash</title><link rel="manifest" href="manifest.webmanifest"><link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png"><link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png"><link rel="stylesheet" href="style.css?v=0.7.0">
+</head>
+<body>
+<header><div><div class="brand">/ VISUAL SLASH</div><div class="tag" id="tagline"></div></div><button id="langBtn" class="lang-btn" aria-label="Language">🌐</button></header>
+<main>
+<section class="hero"><h1><span id="hero1"></span><br><span id="hero2"></span></h1><p id="heroP"></p></section>
+<section class="ai-guide"><span class="eyebrow" id="before"></span><h2 id="guideTitle"></h2><p class="lead" id="guideLead"></p><div class="ai-steps"><div class="ai-step"></div><div class="ai-step"></div><div class="ai-step"></div><div class="ai-step"></div></div><small class="ai-note" id="note"></small></section>
+<section class="start"><div class="start-head"><div><span class="eyebrow" id="startLabel"></span><h2 id="whatTitle"></h2><p id="whatSub"></p></div></div><div id="modeGrid" class="recipe-grid"></div><div id="modeInfo" class="mode-info"></div><div id="recipeGrid" class="recipe-grid"></div><div class="advisor"><div><strong id="dontKnow"></strong><p id="advisorText"></p></div><button id="helpChoose"></button><small id="advisorMsg"></small></div></section>
+<section id="builder"></section>
+<section class="subject"><label id="subjectLabel" for="subject"></label><textarea id="subject"></textarea></section>
+<section id="whyBox" class="why-box"></section>
+<section class="output"><div class="output-head"><span id="slashTitle"></span><button id="copySlash"></button></div><code id="slashLine"></code><div class="output-head prompt-head"><span id="promptTitle"></span><button id="copyPrompt"></button></div><div id="promptText"></div></section>
+<section class="actions"><button id="share"></button><button id="reset" class="ghost"></button><button id="install" class="ghost" hidden></button></section>
+<section class="about"><h2 id="aboutTitle"></h2><p id="aboutText"></p></section>
+</main>
+<footer id="footer"></footer>
+<div id="languageModal" class="language-modal" hidden>
+  <div class="language-card" role="dialog" aria-modal="true" aria-labelledby="languageTitle">
+    <button id="languageClose" class="language-close" aria-label="Close">×</button>
+    <div class="language-brand">/ VISUAL SLASH</div>
+    <h2 id="languageTitle">Choose your language · Scegli la lingua · Sprache wählen</h2>
+    <p>Elige tu idioma · Choisissez votre langue · Escolha o idioma · 选择语言</p>
+    <small id="langDetected"></small>
+    <div class="language-grid">
+      <button class="lang-choice" data-lang="it"><b>Italiano</b><span>Continua in italiano</span></button>
+      <button class="lang-choice" data-lang="en"><b>English</b><span>Continue in English</span></button>
+      <button class="lang-choice" data-lang="de"><b>Deutsch</b><span>Auf Deutsch fortfahren</span></button>
+      <button class="lang-choice" data-lang="es"><b>Español</b><span>Continuar en español</span></button>
+      <button class="lang-choice" data-lang="fr"><b>Français</b><span>Continuer en français</span></button>
+      <button class="lang-choice" data-lang="pt"><b>Português</b><span>Continuar em português</span></button>
+      <button class="lang-choice" data-lang="zh-CN"><b>简体中文</b><span>使用简体中文</span></button>
+    </div>
+    <p class="language-privacy">🌐 Language is saved only on this device · La lingua resta salvata solo su questo dispositivo</p>
+  </div>
+</div>
+<script src="app.js?v=0.7.0"></script>
+</body></html>
