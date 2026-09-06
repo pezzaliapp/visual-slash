@@ -36,8 +36,15 @@ Alessandro Pezzali
 
 ## Status
 
-v0.1.1 — initial functional prototype.
+v0.2.0 — initial functional prototype.
 
 
 ## PWA icons
 PNG 192×192 and 512×512, maskable 512×512, Apple touch icon 180×180, favicon 32×32, plus SVG fallback.
+
+
+## v0.2.0
+- Tooltip didattici in linguaggio semplice per ogni slash.
+- Ogni spiegazione include: cosa fa, quando usarlo, esempio.
+- Supporto hover/focus desktop e tocco/focus mobile.
+- Micro-istruzioni per le quattro categorie.
