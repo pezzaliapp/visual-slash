@@ -36,21 +36,21 @@ Alessandro Pezzali
 
 ## Status
 
-v0.4.0 — initial functional prototype.
+v0.5.0 — initial functional prototype.
 
 
 ## PWA icons
 PNG 192×192 and 512×512, maskable 512×512, Apple touch icon 180×180, favicon 32×32, plus SVG fallback.
 
 
-## v0.4.0
+## v0.5.0
 - Tooltip didattici in linguaggio semplice per ogni slash.
 - Ogni spiegazione include: cosa fa, quando usarlo, esempio.
 - Supporto hover/focus desktop e tocco/focus mobile.
 - Micro-istruzioni per le quattro categorie.
 
 
-## v0.4.0
+## v0.5.0
 - Ricette pronte per obiettivi comuni
 - “Non so cosa scegliere” con suggerimenti locali/offline
 - Sezione “Perché queste scelte?” per imparare mentre si usa il builder
@@ -61,3 +61,7 @@ PNG 192×192 and 512×512, maskable 512×512, Apple touch icon 180×180, favicon
 Visual Slash non genera direttamente immagini. Costruisce un prompt visuale esteso da copiare in ChatGPT o in un altro strumento di AI generativa compatibile con la creazione/modifica di immagini. Le scorciatoie `/slash` sono un vocabolario indipendente del progetto; per la massima portabilità tra strumenti è consigliato usare il **Prompt generato** in linguaggio naturale.
 
 Le capacità e l’interpretazione del prompt dipendono dallo strumento AI utilizzato. Visual Slash non è affiliato, certificato o sponsorizzato da OpenAI, Google, Anthropic o altri fornitori.
+
+
+## v0.5.0
+Visual Slash ora include sei aree: immagini, documenti, dati, presentazioni, testi e codice. Il prompt esteso resta in linguaggio naturale per essere portabile tra strumenti AI compatibili.
